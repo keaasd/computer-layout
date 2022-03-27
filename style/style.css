@@ -231,6 +231,98 @@ p {
   height: 400px;
 }
 
+.comand {
+  padding-top: 25.3rem;
+  padding-bottom: 20rem;
+}
+.title-header {
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 140%;
+  text-align: center;
+}
+.comand__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 11.3rem;
+  max-width: 1109px;
+  margin: 0 auto;
+}
+.comand__items {
+  text-align: center;
+}
+.comand__image {
+  width: 190px;
+  height: 190px;
+}
+.comand_name {
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 1.4;
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+}
+.comand_text {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+}
+.comand_btn {
+  /* font-weight: 400; */
+  font-size: 1.6rem;
+  padding: 1rem 3rem;
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+}
+.assemble {
+  padding-bottom: 24.4rem;
+}
+.assemble_wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.assemble-text {
+  margin-top: 3rem;
+  margin-bottom: 4.5rem;
+}
+.assemble-btn {
+  margin-bottom: 4.8rem;
+}
+.assemble-social {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+.assemble-social__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  width: 5rem;
+  height: 5rem;
+  background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
+}
+.assemble-social__item img {
+  width: 50%;
+  height: 50%;
+}
+.process::before,
+.comand::before {
+  content: "";
+  display: block;
+  background-image: url(../image/Ellipse-2.png);
+  height: 44px;
+  width: 90px;
+  background-repeat: no-repeat;
+}
+.comand::before {
+  transform: rotate(45deg);
+}
 @media (max-width: 1580px) {
   .main-display {
     padding-left: 6rem;

@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<script defer src="js/index.js"></script>
     <script defer src="js/modal.js"></script>
+    <script defer src="js/timer.js"></script>
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
     <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">  -->
@@ -33,17 +34,17 @@
     <main class="main">
         <section class="main-display">
             <h1 class="title">Собираем игровой ПК под ваш бюджет</h1>
-            <div class="main-display_timer">
+            <div class="main-display_timer timer__block">
                 <div class="main-display_item">
-                    <div class="main-display_count">18</div>
+                    <div class="main-display_count">19</div>
                     <div class="main-display_text">Дней</div>
                 </div>
                 <div class="main-display_item">
-                    <div class="main-display_count">18</div>
+                    <div class="main-display_count">19</div>
                     <div class="main-display_text">Часов</div>
                 </div>
                 <div class="main-display_item">
-                    <div class="main-display_count">18</div>
+                    <div class="main-display_count">19</div>
                     <div class="main-display_text">Минут</div>
                 </div>
                 <div class="main-display_item">
@@ -58,15 +59,73 @@
     </section>
     
     <section class="special">
-        <div class="contaner">
+        <div class="container">
             <div class="special_wrap">
                 <div class="special_img"></div>
-                <h2>Чем мы занимаемся</h2>
+                <h2 class="title-header">Чем мы занимаемся</h2>
+            </div>
+        </div>        
+    </section>   
+
+    <section class="process">
+        <div class="container">
+            <h2 class="title-header">Процесс работы </h2>
+        </div>
+    </section> 
+
+<!-- 3 день -->
+    <section class="comand">  
+        <div class="container">
+            <h2 class="title-header">Наша команда</h2>
+            <div class="comand__list">
+                <div class="comand__items">
+                    <img  class="comand__image" src="image/face1.png" alt="">
+                    <p class="comand_name">Евгений Петров</p>
+                    <p class="comand_text">Специалист по видеокартам</p>
+                    <button class="comand_btn" type="button">Биография</button>
+                </div>
+                <div class="comand__items">
+                    <img class="comand__image" src="image/face2.png" alt="">
+                    <p class="comand_name">Алексей Козлов</p>
+                    <p class="comand_text">Специалист по видеокартам</p>
+                    <button class="comand_btn" type="button">Биография</button>
+                </div>
+                <div class="comand__items">
+                    <img class="comand__image" src="image/face3.png" alt="">
+                    <p class="comand_name">Дмитрий Иванов</p>
+                    <p class="comand_text">Специалист по видеокартам</p>
+                    <button class="comand_btn" type="button">Биография</button>
+                </div>
             </div>
         </div>
-        
-    </section>
-        
+    </section>  
+
+
+    <section class="assemble">  
+        <div class="container">
+            <div class="assemble_wrap">                
+                <h2 class="title-header">Закажите свою уникальную сборку</h2>
+                <p class="assemble-text">Мы свяжемся с вами, чтобы уточнить детали заказа</p>
+                <div class="assemble-btn">
+                    <button class="button main_button" type="button">Оставить&nbsp;заявку</button>
+                </div>
+                <div class="assemble-social">
+                    <div class="assemble-social__item vk">
+                        <img src="image/vk.svg" alt="">
+                    </div>
+                    <div class="assemble-social__item youtube">
+                        <img src="image/youtube.svg" alt="">
+                    </div>
+                    <div class="assemble-social__item fb">
+                        <img src="image/fb.svg" alt="">
+                    </div>
+                    <div class="assemble-social__item in">
+                        <img src="image/in.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
 </main>
 
 <aside></aside>
