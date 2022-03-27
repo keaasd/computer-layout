@@ -215,31 +215,90 @@ p {
   line-height: 17px;
   color: #858585;
 }
+.process_description {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  opacity: 0.5;
+  margin-top: 5rem;
+  margin-bottom: 7.8rem;
+  max-width: 370px;
+}
+.process_colums {
+  display: flex;
+  position: relative;
+}
+.process_colums::after {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
+}
+.process_item:not(:last-child) {
+  margin-right: 2.5%;
+}
 
+.process_tit {
+  font-weight: 700;
+  font-size: 3.6rem;
+  line-height: 1.4;
+}
+.process_content {
+  margin-top: 7rem;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  max-width: 295px;
+  opacity: 0.5;
+}
 .special {
-  margin-top: 6rem;
+  /* margin-top: 6rem; */
+  margin-top: 43rem;
+  margin-bottom: 23.3rem;
 }
 .special_wrap {
   display: flex;
   justify-content: space-between;
 }
-.special_img {
-  display: block;
-  background-image: url(../image/pc-group.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 400px;
+.special__box {
+  margin-top: 7rem;
+  flex-basis: 48%;
 }
-
+.special_img {
+  height: 540px;
+}
+.special__description {
+  margin-top: 47px;
+  /* font-weight: 400; */
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
 .comand {
-  padding-top: 25.3rem;
+  padding-top: 24rem;
   padding-bottom: 20rem;
+}
+.comand_img {
+  width: 90px;
+  margin-right: 4rem;
+  position: relative;
+  bottom: 25px;
+}
+.comand_box {
+  display: flex;
+}
+.comand__img_ellips {
+  transform: rotate(45deg);
+  margin-right: 26px;
+  bottom: 17px;
 }
 .title-header {
   font-weight: 700;
   font-size: 4.8rem;
   line-height: 140%;
-  text-align: center;
+  /* text-align: center; */
 }
 .comand__list {
   display: flex;
@@ -311,7 +370,7 @@ p {
   width: 50%;
   height: 50%;
 }
-.process::before,
+/* .process::before,
 .comand::before {
   content: "";
   display: block;
@@ -322,7 +381,7 @@ p {
 }
 .comand::before {
   transform: rotate(45deg);
-}
+} */
 @media (max-width: 1580px) {
   .main-display {
     padding-left: 6rem;
