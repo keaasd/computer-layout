@@ -72,3 +72,93 @@ footer 10px copy копирайт футер
   .nav-items:hover::after {
     width: 100%;
   }
+
+:nth-child(odd)even {...} нечетные
+  <!-- мобильное меню 1-1 -->
+
+<form action="#" class="modal block_center" >
+    <div class="modal__inner">
+        <button type="button" class="modal__close"></button>
+        <h2 class="modal__header">регистрация</h2>
+        <div class="modal__elements">
+            <div class="modal__item">
+                <input class="modal__input" type="text" placeholder="Ваше имя">
+            </div>
+            <div class="modal__item">
+                <input class="modal__input" type="email" placeholder="e-mail">
+            </div>
+            <div class="modal__item">
+                <input class="modal__input" type="tel" placeholder="номер телефона">
+            </div>
+        </div>
+        <button type="submit">Отправить</button>
+    </div>
+</form>
+<!-- мобильное меню 1-2 css -->
+.block_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.modal {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-x: auto;
+    z-index: 10;
+    padding: 3rem 0;
+    background: rgba(0, 0, 0, 0.8);
+    /* display: none; */
+}
+.modal__inner {
+    max-width: 663px;
+    width: 100%;
+    padding: 9rem 9.5rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.modal__close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: block;
+    height: 30px;
+    width: 30px;
+    background-image: url(../image/close.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+.modal__elements {
+    margin: 0 auto;
+    max-width: 44.4rem;
+}
+<!-- мобильное меню 1-3 js -->
+  js
+  // modal window
+const modalWindow = document.querySelector('.modal');
+const buttonModals = document.querySelectorAll('.modal__button');
+const modalClose = document.querySelector('.modal__close');
+const body = document.querySelector('body');
+
+buttonModals.forEach((item) => {
+	item.addEventListener('click', () => {
+		modalWindow.style.display = 'flex';
+	});
+});
+
+modalWindow.addEventListener('click', (e) => {
+	const isModal = e.target.closest('.modal__inner');
+	if (!isModal) {
+	modalWindow.style.display = 'none';
+	body.classList.remove('noscroll');
+}
+});
+
+modalClose.addEventListener('click', () => {
+	modalWindow.style.display = 'none';
+	body.classList.remove('noscroll');
+})

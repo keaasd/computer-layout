@@ -22,9 +22,9 @@
         <a href="#" class="logo"><img src="image/logo.svg"></a>
         <div class="header_nav">
             <nav class="navigation">
-                <a href="#">Чем&nbsp;занимаемся</a>
-                <a href="#">Процесс&nbsp;работы</a>
-                <a href="#">Команда</a>
+                <a href="#special">Чем&nbsp;занимаемся</a>
+                <a href="#process">Процесс&nbsp;работы</a>
+                <a href="#comand">Команда</a>
             </nav>
             <button class="burger-btn header-burger" onclick="openModal()" type="button"></button>    
             <button class="button header_button" type="button" >Оставить&nbsp;заявку</button>    
@@ -58,7 +58,7 @@
             </div>        
     </section>
     
-    <section class="special">
+    <section class="special" id="special">
         <div class="container">
             <div class="special_wrap">
                 <div class="special_img">
@@ -72,13 +72,13 @@
         </div>        
     </section>   
 
-    <section class="process">
+    <section class="process" id="process">
         <div class="container">
             <div class="comand_box">
                 <div class="comand_img comand__img_ellips">
                     <img src="image/Ellipse-2.png" alt="">
                 </div>
-                <h2 class="title-header">Процесс работы </h2>
+                <h2 class="title-header" >Процесс работы </h2>
             </div>
             <p class="process_description">Подробно рассказываем о том, как происходит сборка, от заявки до выдачи вашего заказа</p>
             <div class="process_colums">
@@ -103,13 +103,13 @@
     </section> 
 
 <!-- 3 день -->
-    <section class="comand">  
+    <section class="comand" id="comand">  
         <div class="container">
             <div class="comand_box">
                 <div class="comand_img">
                     <img src="image/Ellipse-2.png" alt="">
                 </div>
-                <h2 class="title-header">Наша команда</h2>
+                <h2 class="title-header" >Наша команда</h2>
             </div>
 
             <div class="comand__list">
@@ -145,42 +145,54 @@
                     <button class="button main_button" type="button">Оставить&nbsp;заявку</button>
                 </div>
                 <div class="assemble-social">
-                    <div class="assemble-social__item vk">
+                    <a href="#" class="assemble-social__item vk">
                         <img src="image/vk.svg" alt="">
-                    </div>
-                    <div class="assemble-social__item youtube">
+                    </a>
+                    <a href="#" class="assemble-social__item youtube">
                         <img src="image/youtube.svg" alt="">
-                    </div>
-                    <div class="assemble-social__item fb">
+                    </a>
+                    <a href="#" class="assemble-social__item fb">
                         <img src="image/fb.svg" alt="">
-                    </div>
-                    <div class="assemble-social__item in">
+                    </a>
+                    <a href="#" class="assemble-social__item in">
                         <img src="image/in.svg" alt="">
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
     </section> 
 </main>
-
-<aside></aside>
-<footer class="footer">           
-        <div class="copyright">
-            <span>Политика конфиденциальности</span>
-            <span>&copy; Reforma master, 2022</span>
-        </div>
-</footer>
-    <div class="modal" id="modal">
+<!-- mobile menu  -->
+    <div class="modal__mb" id="modal">
         <div class="modal_window">
             <a href="#" class="logo"><img src="image/logo.svg"></a>
             <button onclick="closeModal()" class="header-modal-close">+</button>
             <div class="burger-link">
-                <a href="#">Чем&nbsp;занимаемся</a>
-                <a href="#">Процесс&nbsp;работы</a>
-                <a href="#">Команда</a>
+                <a href="#special">Чем&nbsp;занимаемся</a>
+                <a href="#process">Процесс&nbsp;работы</a>
+                <a href="#comand">Команда</a>
             </div>
         </div>
     </div>
     
+    <form action="#" class="modal block_center" >
+        <div class="modal__inner">
+            <button type="button" class="modal__close"></button>
+            <h2 class="modal__header">Заявка на сборку&nbsp;ПК</h2>
+            <p class="modal__sub-header">Мы свяжемся с вами, чтобы обсудить детали заказа</p>
+            <div class="modal__elements">
+                <div class="modal__item">
+                    <input class="modal__input" type="text" placeholder="Как вас зовут">
+                </div>
+                <div class="modal__item">
+                    <input class="modal__input" type="tel" placeholder="номер телефона">
+                </div>
+                <div class="modal__item">
+                    <input class="modal__input" type="email" placeholder="e-mail">
+                </div>
+            </div>
+            <button class="button main_button" type="submit">Отправить</button>
+        </div>
+    </form>
 </body>
 </html>
