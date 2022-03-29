@@ -11,6 +11,9 @@
     модалка
     мобильное меню
     аккордион 
+
+    ==
+    
 html {
     font-size: 10px;
     
@@ -136,20 +139,26 @@ footer 10px copy копирайт футер
     margin: 0 auto;
     max-width: 44.4rem;
 }
-<!-- мобильное меню 1-3 js -->
-  js
-  // modal window
+.noscroll {
+    overflow: hidden;
+    height: 100%;
+}
+// modal window
 const modalWindow = document.querySelector('.modal');
 const buttonModals = document.querySelectorAll('.modal__button');
 const modalClose = document.querySelector('.modal__close');
 const body = document.querySelector('body');
 
+// по клику по кнопке включаем меню 
+// убираем прокрутку с body 
 buttonModals.forEach((item) => {
 	item.addEventListener('click', () => {
 		modalWindow.style.display = 'flex';
+		body.classList.add('noscroll');
 	});
 });
-
+// закрываем модалку при нажатии вне
+// вернем прокрутку в body  
 modalWindow.addEventListener('click', (e) => {
 	const isModal = e.target.closest('.modal__inner');
 	if (!isModal) {
@@ -157,7 +166,7 @@ modalWindow.addEventListener('click', (e) => {
 	body.classList.remove('noscroll');
 }
 });
-
+// по клику на крестик включаем скрол 
 modalClose.addEventListener('click', () => {
 	modalWindow.style.display = 'none';
 	body.classList.remove('noscroll');
