@@ -104,7 +104,7 @@ p {
 .modal__mb {
   position: fixed;
   top: 0;
-  left: -1930px;
+  left: -3000px;
   background-color: rgba(0, 0, 0, 0.3);
   min-height: 100vh;
   min-width: 100vw;
@@ -190,7 +190,7 @@ p {
   display: flex;
   gap: 3rem;
   margin-top: 5.3rem;
-  margin-bottom: 7.5rem;
+  margin-bottom: 4.5rem;
 }
 .main-display_item {
   width: 102px;
@@ -272,8 +272,9 @@ p {
 }
 .special {
   /* margin-top: 6rem; */
-  margin-top: 43rem;
-  margin-bottom: 23.3rem;
+  margin-top: 41rem;
+  margin-bottom: 21.3rem;
+  padding-top: 2rem;
 }
 .special_wrap {
   display: flex;
@@ -282,9 +283,12 @@ p {
 .special__box {
   margin-top: 7rem;
   flex-basis: 48%;
+  flex-shrink: 3;
 }
 .special_img {
   height: 540px;
+  padding-right: 2.5rem;
+  flex-shrink: 1;
 }
 .special__description {
   margin-top: 47px;
@@ -293,8 +297,8 @@ p {
   line-height: 1.6;
 }
 .comand {
-  padding-top: 24rem;
-  padding-bottom: 20rem;
+  padding-top: 2rem;
+  margin-bottom: 20rem;
 }
 .block_center {
   display: flex;
@@ -393,18 +397,12 @@ p {
   width: 50%;
   height: 50%;
 }
-/* .process::before,
-.comand::before {
-  content: "";
-  display: block;
-  background-image: url(../image/Ellipse-2.png);
-  height: 44px;
-  width: 90px;
-  background-repeat: no-repeat;
+
+.process {
+  padding-top: 2rem;
+  margin-bottom: 24rem;
 }
-.comand::before {
-  transform: rotate(45deg);
-} */
+
 .modal__header {
   font-weight: 700;
   font-size: 4.8rem;
@@ -468,10 +466,12 @@ p {
   height: 100%;
   overflow-x: hidden;
   overflow-x: auto;
-  z-index: 10;
   padding: 3rem 0;
   background: rgba(0, 0, 0, 0.8);
-  display: none;
+  z-index: 10;
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s linear;
 }
 .modal__inner {
   position: relative;
@@ -492,6 +492,7 @@ p {
   background-repeat: no-repeat;
   background-size: contain;
   background-color: transparent;
+  transition: 0.2s;
 }
 .modal__sub-header {
   font-size: 1.6rem;
@@ -534,6 +535,10 @@ p {
   .navigation a:not(:last-child) {
     margin-right: 5rem;
   }
+  .special__box {
+    flex-basis: 100%;
+    flex-shrink: 2;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -570,6 +575,9 @@ p {
   .button:hover,
   .comand_btn:hover {
     box-shadow: 0px 0px 14px 0px #fff;
+  }
+  .modal__close:hover {
+    transform: rotate(180deg);
   }
 
   .assemble-social__item:hover {

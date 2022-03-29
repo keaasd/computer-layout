@@ -6,7 +6,7 @@ function openModal() {
 //     document.getElementById("modal-popup").style.top = "1589px";
 // }
 function closeModal() {
-    document.getElementById("modal__mb").style.left = "-200%";
+    document.getElementById("modal__mb").style.left = "-3000px";
 }
 }
 // modal window
@@ -19,7 +19,12 @@ const body = document.querySelector('body');
 // убираем прокрутку с body 
 buttonModals.forEach((item) => {
 	item.addEventListener('click', () => {
-		modalWindow.style.display = 'flex';
+		// modalWindow.style.display = 'flex', background = `red`;
+		 
+		modalWindow.style.cssText = `	
+		visibility: visible;
+		opacity: 1;
+		`;
 		body.classList.add('noscroll');
 	});
 });
@@ -28,12 +33,18 @@ buttonModals.forEach((item) => {
 modalWindow.addEventListener('click', (e) => {
 	const isModal = e.target.closest('.modal__inner');
 	if (!isModal) {
-	modalWindow.style.display = 'none';
+	modalWindow.style.cssText = `	
+	visibility: hidden;
+	opacity: 0;
+	`;
 	body.classList.remove('noscroll');
 }
 });
 // по клику на крестик включаем скрол 
 modalClose.addEventListener('click', () => {
-	modalWindow.style.display = 'none';
+	modalWindow.style.cssText = `	
+	visibility: hidden;
+	opacity: 0;
+	`;
 	body.classList.remove('noscroll');
 })
