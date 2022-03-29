@@ -15,7 +15,7 @@ const buttonModals = document.querySelectorAll('.modal__button');
 const modalClose = document.querySelector('.modal__close');
 const body = document.querySelector('body');
 
-// по клику по кнопке включаем меню 
+// по клику по кнопке включаем меню  
 // убираем прокрутку с body 
 buttonModals.forEach((item) => {
 	item.addEventListener('click', () => {
