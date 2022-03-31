@@ -139,6 +139,7 @@ p {
 .navigation a {
   font-weight: 400;
   font-size: 1.6rem;
+  transition: 0.3s linear;
 }
 .navigation a::after {
   display: block;
@@ -334,7 +335,7 @@ p {
   font-weight: 700;
   font-size: 4.8rem;
   line-height: 140%;
-  /* text-align: center; */
+  text-align: center;
 }
 .comand__list {
   display: flex;
@@ -385,6 +386,7 @@ p {
 .assemble-text {
   margin-top: 3rem;
   margin-bottom: 4.5rem;
+  text-align: center;
 }
 .assemble-btn {
   margin-bottom: 4.8rem;
@@ -431,7 +433,7 @@ p {
   z-index: 10;
   visibility: hidden;
   opacity: 0;
-  transition: 1s linear;
+  transition: 0.3s linear;
 }
 .modal__inner {
   position: relative;
@@ -586,6 +588,7 @@ p {
   }
   .navigation a:not(:last-child) {
     margin-right: 3rem;
+    transition: 0.3s linear;
   }
   .header_button {
     margin-left: 0;
