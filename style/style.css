@@ -461,13 +461,13 @@ p {
   margin-bottom: 2.8rem;
 }
 .modal__input {
-  background: gray;
-  opacity: 0.25;
+  /* background: rgba(128, 128, 128, 0.25); */
+  background: rgba(255, 255, 255, 0.25);
   border-radius: 50px;
   font-size: 1.4rem;
   line-height: 1.6;
-  color: #ffffff;
-  opacity: 0.8;
+  color: rgba(255, 255, 255, 0.8);
+  /* opacity: 0.8; */
 }
 .modal__elements {
   margin: 0 auto;
